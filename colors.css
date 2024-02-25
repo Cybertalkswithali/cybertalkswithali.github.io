@@ -4,59 +4,89 @@ body, h1, h2, p, ul, li {
     padding: 0;
 }
 
-/* Basic styles */
 body {
-    font-family: Cambria, serif;
-    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    background-color: #222;
+    color: #fff;
+    text-align: center; /* Aligning everything in the center */
 }
 
-header, footer, nav {
-    padding: 1rem 0;
+/* Header */
+#header {
+    background-color: #333;
+    padding: 2em 0;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
+#header h1 a {
+    font-size: 2.5em;
+    color: #fff;
     text-decoration: none;
 }
 
-main {
-    padding: 20px;
+#header p {
+    font-size: 1.1em;
+    margin-top: 0.5em;
 }
 
-/* Theme-specific styles */
-.dark-theme {
-    background-color: #111;
+/* Main Content */
+#main {
+    padding: 4em 0;
+}
+
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tiles article {
+    margin: 0.5em;
+    flex: 1 1 300px;
+}
+
+.tiles article .image {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.tiles article .image img {
+    width: 100%;
+    height: auto;
+}
+
+.tiles article header.major {
+    padding-bottom: 1em;
+    border-bottom: 1px solid #888;
+}
+
+.tiles article header.major h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.tiles article header.major p {
+    font-size: 1em;
+}
+
+/* Footer */
+#footer {
+    background-color: #333;
+    padding: 2em 0;
+}
+
+#footer .icons {
+    list-style: none;
+    padding: 0;
+}
+
+#footer .icons li {
+    display: inline-block;
+    margin: 0 0.5em;
+}
+
+#footer .icons li a {
+    display: block;
     color: #fff;
+    font-size: 1.5em;
 }
 
-.cyber-theme {
-    background-color: #0c0c0c;
-    color: #00ff00;
-}
-
-h1 {
-    font-size: 16px;
-}
-
-h2 {
-    font-size: 14px;
-}
-
-p {
-    font-size: 12px;
-}
-
-/* Background image */
-body {
-    background-image: url('https://github.com/Cybertalkswithali/cybertalkswithali.github.io/blob/main/Theme.jpg'); /* Adjust the path as needed */
-    background-size: cover;
-    background-position: center;
-}
