@@ -6,14 +6,11 @@ body, h1, h2, p, ul, li {
 
 /* Basic styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Cambria, serif;
     line-height: 1.6;
 }
 
 header, footer, nav {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
     padding: 1rem 0;
 }
 
@@ -27,7 +24,6 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
 }
 
@@ -35,7 +31,25 @@ main {
     padding: 20px;
 }
 
-footer {
-    margin-top: 20px;
-    clear: both;
+/* Theme-specific styles */
+.dark-theme {
+    background-color: #111;
+    color: #fff;
+}
+
+.cyber-theme {
+    background-color: #0c0c0c;
+    color: #00ff00;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+p {
+    font-size: 12px;
 }
